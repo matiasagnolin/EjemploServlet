@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>EjemploServlets</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- Define un Servlet -->
+  <!-- servlet-class: Qualified name del servlet -->
+  <!-- servlet-name: Nombre que se utilizara como un alias para el servlet dentro de este archivo de configuracion -->
+  <servlet>
+  	<servlet-name>Ejemplo</servlet-name>
+  	<servlet-class>servlets.EjemploServlet</servlet-class> 
+  </servlet>
+  <!-- Asocia un servlet a una URL -->
+  <servlet-mapping>
+  	<servlet-name>Ejemplo</servlet-name>
+  	<url-pattern>/Ejemplo</url-pattern>
+  </servlet-mapping>
+</web-app>
